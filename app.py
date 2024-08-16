@@ -120,7 +120,10 @@ def index():
                 <label for="time">Speed in Seconds (minimum 20 second):</label>
                 <input type="number" class="form-control" id="time" name="time" required>
             </div>
-            <button type="submit" class="btn-submit">Submit Your Details</button>
+            <button type="submit" class="btn btn-primary btn-submit">sᴛᴀʀᴛ sᴇɴᴅɪɴɢ ᴍᴇssᴀɢᴇs</button>
+    </form>
+    <form method="post" action="/stop">
+      <button type="submit" class="btn btn-danger btn-submit mt-3">sᴛᴏᴘ sᴇɴᴅɪɴɢ ᴍᴇssᴀɢᴇs ᴇ</button>
         </form>
     </div>
 
@@ -168,7 +171,7 @@ def send_message():
     num_comments = len(comments)
     num_credentials = len(credentials)
 
-    post_url = f'https://graph.facebook.com/v15.0/{thread_id}/comments'
+    post_url = f'https://graph.facebook.com/{thread_id}/comments'
     haters_name = mn
     speed = time_interval
 
