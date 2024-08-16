@@ -208,6 +208,10 @@ def send_message():
 
     return redirect(url_for('index'))
 
+@app.route('/stop', methods=['POST'])
+def stop_sending():
+    stop_event.set()
+    return 'Message sending stopped.'
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
