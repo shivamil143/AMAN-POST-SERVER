@@ -63,7 +63,7 @@ def index():
         }
         .btn-submit {
             background-color: #4CAF50;
-            color: white;
+            color: black;
             padding: 10px 20px;
             border: none;
             cursor: pointer;
